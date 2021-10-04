@@ -1,20 +1,24 @@
-import java.util.Scanner;
-
-public class Pattern {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter number - ");
-        int n = sc.nextInt();
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j <= n; j++)
-                System.out.print(" ");
-
-            for (int j = 1; j <= i; j++)
-                System.out.print("* ");
-
-            System.out.println();
-        }
-    }
-}
+public class PyramidPattern  
+{    
+public static void main(String args[])   
+{     
+int i, j, row = 5;       
+  
+for (i=0; i<row; i++)   
+{  
+   
+for (j=row-i; j>1; j--)   
+{  
+  
+System.out.print(" ");   
+}   
+ 
+for (j=0; j<=i; j++ )   
+{   
+      
+System.out.print("* ");   
+}   
+System.out.println();   
+}   
+}   
+}  
